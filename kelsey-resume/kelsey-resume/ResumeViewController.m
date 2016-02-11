@@ -8,7 +8,7 @@
 
 #import "ResumeViewController.h"
 
-@interface ResumeViewController ()
+@interface ResumeViewController () 
 
 @end
 
@@ -46,27 +46,62 @@
 
 }
 
+- (IBAction)saveButtonPressed:(id)sender {
+    
+    NSString *Path = [[NSBundle mainBundle] pathForResource:@"Kelsey Kjeldsen Resume" ofType:@"pdf"];
+    
+    //set pdf to nsdata
+    NSData *pdfData = [NSData dataWithContentsOfFile:Path];
+    
+    //set the mail composer object
+    MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+    //set composer delagate to this view controller (resumeViewController)
+    [mailComposer setMailComposeDelegate:self];
+    if ([MFMailComposeViewController canSendMail]) {
+        // Configure the fields of the interface.
+        [mailComposer setToRecipients:@[@"address@example.com"]];
+        [mailComposer setSubject:@"Here is Kelsey's Resume!"];
+        [mailComposer setMessageBody:@"This is Kelsey's resume." isHTML:NO];
+        [mailComposer addAttachmentData:pdfData mimeType:@"application/pdf" fileName:@"Kelsey Kjeldsen Resume.pdf"];
+        
+        // Present the view controller modally.
+        [self presentViewController:mailComposer animated:YES completion:nil];
+        
+        return;
+    } else {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        [alert dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+    
+}
 
-//1) Add a button to the View containing UIWebView
-//2) At button press save the file shown in UIWebView
-//(note: in iOS 5 you must save data that can be easily recreated or downloaded to the caches directory)
+//dismiss the mail VC when it is finished
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    // Check the result or perform other tasks.
+    if (error) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        //OK button action
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            //dismiss the view
+            [alert dismissViewControllerAnimated:YES completion:nil];
+            
+        }];
+        
+        [alert addAction:ok];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    } else {
+    
+//        [alert dismissViewControllerAnimated:YES completion:nil];
 
-//- (IBAction)saveButtonPress:(id)sender
-//
-//    NSArray: *paths = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)];
-//    NSString *cachePath = [paths objectAtIndex:0];
-//    BOOL isDir = NO;
-//    NSError *error;
-//    //You must check if this directory exist every time
-//    if (! [[NSFileManager defaultManager] fileExistsAtPath:cachePath isDirectory:&isDir] && isDir   == NO)
-//    {
-//        [[NSFileManager defaultManager] createDirectoryAtPath:cachePath withIntermediateDirectories:NO attributes:nil error:&error];
-//    }
-//    NSString *filePath = [cachePath stringByAppendingPathComponent:@"someName.pdf"]
-//    //webView.request.URL contains current URL of UIWebView, don't forget to set outlet for it
-//    NSData *pdfFile = [NSData dataWithContentsOfURL:webView.request.URL];
-//    [pdfFile writeToFile:filePath atomically:YES];
-//}
+    }
+    
+    // Dismiss the mail compose view controller.
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
      
 @end

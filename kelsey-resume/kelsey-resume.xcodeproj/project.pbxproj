@@ -31,6 +31,7 @@
 		DF754F761C6C552F00C6F454 /* background.svg in Resources */ = {isa = PBXBuildFile; fileRef = DF754F751C6C552F00C6F454 /* background.svg */; };
 		DF754F7F1C6C5AA500C6F454 /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF754F7E1C6C5AA500C6F454 /* ResumeViewController.m */; };
 		DF754F811C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF754F801C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf */; };
+		DFCDFC911C6D236700E88E1E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCDFC901C6D236700E88E1E /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		DF754F7D1C6C5AA500C6F454 /* ResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeViewController.h; sourceTree = "<group>"; };
 		DF754F7E1C6C5AA500C6F454 /* ResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeViewController.m; sourceTree = "<group>"; };
 		DF754F801C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Kelsey Kjeldsen Resume.pdf"; sourceTree = "<group>"; };
+		DFCDFC901C6D236700E88E1E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFCDFC911C6D236700E88E1E /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +118,7 @@
 		DF754F321C6C4B8300C6F454 = {
 			isa = PBXGroup;
 			children = (
+				DFCDFC901C6D236700E88E1E /* MessageUI.framework */,
 				DF754F3D1C6C4B8300C6F454 /* kelsey-resume */,
 				DF754F571C6C4B8300C6F454 /* kelsey-resumeTests */,
 				DF754F621C6C4B8300C6F454 /* kelsey-resumeUITests */,
