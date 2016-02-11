@@ -45,30 +45,17 @@
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcd-hC-HPt">
-                                <rect key="frame" x="51" y="285" width="96" height="30"/>
+                                <rect key="frame" x="51" y="314" width="96" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="8Ed-Gj-wer"/>
                                     <constraint firstAttribute="height" constant="30" id="Cf5-e9-j2d"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Portfolio">
-                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="IwC-iy-qYa" kind="presentation" id="YBK-xx-jd1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRE-hK-jz7">
-                                <rect key="frame" x="470" y="394" width="96" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="tJm-a5-pav"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Resume">
-                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="N62-1V-U51" kind="presentation" modalTransitionStyle="flipHorizontal" id="8Mt-eh-WX7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kelsey Kjeldsen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-qh-N96">
@@ -78,38 +65,76 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukX-wf-2UQ">
-                                <rect key="frame" x="51" y="517" width="96" height="36"/>
+                                <rect key="frame" x="51" y="537" width="96" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="l7N-lA-eZa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Contact">
-                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Skills">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portfolio icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-5e-UHz">
+                                <rect key="frame" x="62" y="239" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skill-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Na0-rk-3jY">
+                                <rect key="frame" x="51" y="493" width="96" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5hV-UU-tnq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRE-hK-jz7">
+                                <rect key="frame" x="470" y="411" width="96" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="tJm-a5-pav"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Resume">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="N62-1V-U51" kind="presentation" modalTransitionStyle="flipHorizontal" id="8Mt-eh-WX7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resume-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yrP-I9-7fe">
+                                <rect key="frame" x="481" y="339" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="7x6-uN-C08"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Na0-rk-3jY" secondAttribute="bottom" constant="59" id="0gO-dQ-LIP"/>
                             <constraint firstItem="BLm-Ak-1U8" firstAttribute="top" secondItem="jtA-qh-N96" secondAttribute="bottom" constant="-124" id="116-Nc-sqz"/>
+                            <constraint firstItem="UPV-5e-UHz" firstAttribute="top" secondItem="jtA-qh-N96" secondAttribute="bottom" constant="35" id="1nx-zN-pR7"/>
+                            <constraint firstItem="UPV-5e-UHz" firstAttribute="centerX" secondItem="xcd-hC-HPt" secondAttribute="centerX" id="5Ss-rQ-UqY"/>
                             <constraint firstItem="BLm-Ak-1U8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="8DE-sI-JI3"/>
                             <constraint firstItem="PPc-DE-qbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="263" id="BfH-EG-dJ5"/>
                             <constraint firstItem="BLm-Ak-1U8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CRj-5l-GAM"/>
                             <constraint firstItem="PPc-DE-qbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="FDV-pi-fJF"/>
                             <constraint firstItem="PPc-DE-qbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="GKf-1K-1mE"/>
-                            <constraint firstItem="xcd-hC-HPt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="GeI-Fl-DzC"/>
+                            <constraint firstItem="xcd-hC-HPt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="294" id="GeI-Fl-DzC"/>
                             <constraint firstAttribute="trailing" secondItem="BLm-Ak-1U8" secondAttribute="trailing" id="Ggv-wK-Ymy"/>
-                            <constraint firstItem="xcd-hC-HPt" firstAttribute="top" secondItem="jtA-qh-N96" secondAttribute="bottom" constant="81" id="HTP-9f-67i"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ukX-wf-2UQ" secondAttribute="bottom" constant="47" id="JhW-Ru-wLP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nRE-hK-jz7" secondAttribute="bottom" constant="170" id="LJ0-UE-Xvf"/>
+                            <constraint firstItem="xcd-hC-HPt" firstAttribute="top" secondItem="jtA-qh-N96" secondAttribute="bottom" constant="110" id="HTP-9f-67i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ukX-wf-2UQ" secondAttribute="bottom" constant="27" id="JhW-Ru-wLP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nRE-hK-jz7" secondAttribute="bottom" constant="153" id="LJ0-UE-Xvf"/>
                             <constraint firstItem="xcd-hC-HPt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51" id="Mg3-Wf-JEu"/>
                             <constraint firstItem="jtA-qh-N96" firstAttribute="top" secondItem="PPc-DE-qbR" secondAttribute="bottom" constant="8" id="MiV-kO-ZCy"/>
+                            <constraint firstItem="xcd-hC-HPt" firstAttribute="top" secondItem="UPV-5e-UHz" secondAttribute="bottom" id="Mjc-rI-ibz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yrP-I9-7fe" secondAttribute="trailing" constant="24" id="OvV-hQ-jZk"/>
                             <constraint firstItem="nRE-hK-jz7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-14" id="PuQ-Yo-msJ"/>
+                            <constraint firstItem="UPV-5e-UHz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="Ssi-Rd-0en"/>
                             <constraint firstItem="PPc-DE-qbR" firstAttribute="centerX" secondItem="BLm-Ak-1U8" secondAttribute="centerX" id="UcM-RK-LHN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jtA-qh-N96" secondAttribute="trailing" constant="3" id="cjW-bD-rYb"/>
+                            <constraint firstItem="Na0-rk-3jY" firstAttribute="leading" secondItem="ukX-wf-2UQ" secondAttribute="leading" id="dvQ-6j-ZbS"/>
                             <constraint firstItem="jtA-qh-N96" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="enf-1W-bct"/>
+                            <constraint firstItem="yrP-I9-7fe" firstAttribute="centerX" secondItem="nRE-hK-jz7" secondAttribute="centerX" id="f6G-TT-F7V"/>
                             <constraint firstItem="jtA-qh-N96" firstAttribute="centerX" secondItem="PPc-DE-qbR" secondAttribute="centerX" id="fCY-bS-ESJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yrP-I9-7fe" secondAttribute="bottom" constant="186" id="kFJ-C0-Ioy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PPc-DE-qbR" secondAttribute="trailing" constant="31" id="l9u-FR-WT8"/>
                             <constraint firstItem="jtA-qh-N96" firstAttribute="top" secondItem="PPc-DE-qbR" secondAttribute="bottom" constant="8" id="p5o-Dr-sS4"/>
+                            <constraint firstItem="Na0-rk-3jY" firstAttribute="trailing" secondItem="ukX-wf-2UQ" secondAttribute="trailing" id="qrG-u0-DHT"/>
                             <constraint firstItem="ukX-wf-2UQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="xIe-qY-GHl"/>
                             <constraint firstItem="nRE-hK-jz7" firstAttribute="leading" secondItem="BLm-Ak-1U8" secondAttribute="trailing" constant="-130" id="yVH-HV-G7s"/>
                             <constraint firstItem="BLm-Ak-1U8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zZz-1w-OxU"/>
@@ -130,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="313"/>
+            <point key="canvasLocation" x="292" y="251"/>
         </scene>
         <!--Item-->
         <scene sceneID="gue-31-PUb">
@@ -188,6 +213,24 @@
             </objects>
             <point key="canvasLocation" x="1069" y="313"/>
         </scene>
+        <!--Skills View Controller-->
+        <scene sceneID="Ete-Hi-Z9I">
+            <objects>
+                <viewController id="cyS-EC-qQw" customClass="SkillsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HRE-6J-syJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wcV-Gr-igp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iEo-F3-ncv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubi-ZX-wvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="1017"/>
+        </scene>
         <!--Portfolio View Controller-->
         <scene sceneID="n4w-TN-jaW">
             <objects>
@@ -243,11 +286,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y32-EM-1wJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="1090"/>
+            <point key="canvasLocation" x="1069" y="-392"/>
         </scene>
     </scenes>
     <resources>
         <image name="background-2.png" width="750" height="1334"/>
         <image name="kmk logo.png" width="240" height="240"/>
+        <image name="portfolio icon.png" width="180" height="180"/>
+        <image name="resume-icon.png" width="198" height="225"/>
+        <image name="skill-icon.png" width="225" height="129"/>
     </resources>
 </document>
