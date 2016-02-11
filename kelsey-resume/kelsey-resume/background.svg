@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="949px" height="1688px" viewBox="0 0 949 1688" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Just Background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0.23547511,0.561823127 L948.6946,0.561823127 L0.23547511,552.751776 L0.23547511,0.561823127 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Just-Background" sketch:type="MSArtboardGroup">
+            <g id="Skills" sketch:type="MSLayerGroup" transform="translate(474.000000, 1410.500000) scale(-1, 1) translate(-474.000000, -1410.500000) translate(-2.000000, 1133.000000)" fill="#0C8FBE">
+                <path d="M951.581488,0.42628265 L951.581488,554.754579 L0.549590936,554.754579 L951.581488,0.42628265 Z" id="SECTION-4" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="Resume" sketch:type="MSLayerGroup" transform="translate(467.500000, 1108.000000) scale(-1, 1) translate(-467.500000, -1108.000000) translate(-16.000000, 528.000000)" fill="#046FA9">
+                <path d="M3.6985662,597.271024 L966.279231,0.203344151 L966.279227,599.217602 L0.855082196,1159.90362 L0.645408127,599.217606 L3.6985662,597.271024 Z" id="Section-3" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="Portfolio" sketch:type="MSLayerGroup" transform="translate(474.500000, 567.500000) scale(-1, 1) translate(-474.500000, -567.500000) translate(0.000000, 1.000000)" fill="#2C4C59">
+                <path d="M0.26322327,545.192937 L948.722349,0.549359222 L948.722349,545.192922 L0.26322327,1132.92362 L0.26322327,573.192289 L0.26322327,545.192937 Z" id="section-2" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="PROFILE" sketch:type="MSLayerGroup" transform="translate(473.500000, 276.500000) scale(-1, 1) translate(-473.500000, -276.500000) translate(-1.000000, 0.000000)" opacity="0.829524254">
+                <g id="section-1">
+                    <use fill="#46D59D" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <use fill="none" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
