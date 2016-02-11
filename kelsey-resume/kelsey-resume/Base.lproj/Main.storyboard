@@ -54,6 +54,9 @@
                                 <state key="normal" title="Portfolio">
                                     <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IwC-iy-qYa" kind="presentation" id="YBK-xx-jd1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRE-hK-jz7">
                                 <rect key="frame" x="470" y="394" width="96" height="36"/>
@@ -141,12 +144,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-Gm-Sta">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-Gm-Sta">
+                                <rect key="frame" x="0.0" y="64" width="600" height="672"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="672" id="wXH-yK-nuw"/>
+                                </constraints>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UvO-Sz-aOJ">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvO-Sz-aOJ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <barButtonItem title="Back" id="t1D-La-hLk">
                                         <connections>
@@ -157,6 +163,14 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UvO-Sz-aOJ" secondAttribute="trailing" id="MRJ-6K-xvl"/>
+                            <constraint firstItem="UvO-Sz-aOJ" firstAttribute="trailing" secondItem="Fm7-Gm-Sta" secondAttribute="trailing" id="Vlq-nw-yP4"/>
+                            <constraint firstItem="UvO-Sz-aOJ" firstAttribute="leading" secondItem="MG7-yp-U22" secondAttribute="leading" id="Zg3-ml-ilS"/>
+                            <constraint firstItem="Fm7-Gm-Sta" firstAttribute="top" secondItem="UvO-Sz-aOJ" secondAttribute="bottom" id="aYa-gd-Sqf"/>
+                            <constraint firstItem="UvO-Sz-aOJ" firstAttribute="top" secondItem="0yT-gP-MuG" secondAttribute="bottom" id="gFR-XJ-S4g"/>
+                            <constraint firstItem="UvO-Sz-aOJ" firstAttribute="leading" secondItem="Fm7-Gm-Sta" secondAttribute="leading" id="oxw-m1-xgh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="resumeWebView" destination="Fm7-Gm-Sta" id="vyh-7J-Uj9"/>
@@ -165,6 +179,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wK-iX-oWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1069" y="313"/>
+        </scene>
+        <!--Portfolio View Controller-->
+        <scene sceneID="n4w-TN-jaW">
+            <objects>
+                <viewController id="IwC-iy-qYa" customClass="PortfolioViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3bv-aT-eGk"/>
+                        <viewControllerLayoutGuide type="bottom" id="FEn-Ge-tCR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Wi-7s-1y4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0JX-EF-iXC">
+                                <rect key="frame" x="0.0" y="65" width="600" height="535"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mx9-ba-qlp">
+                                <rect key="frame" x="0.0" y="21" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Back" id="ikg-gs-EZl">
+                                        <connections>
+                                            <action selector="backToHomepage:" destination="IwC-iy-qYa" id="3hD-mA-BCv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mx9-ba-qlp" firstAttribute="leading" secondItem="0JX-EF-iXC" secondAttribute="leading" id="12j-1b-J8P"/>
+                            <constraint firstItem="mx9-ba-qlp" firstAttribute="trailing" secondItem="0JX-EF-iXC" secondAttribute="trailing" id="RwQ-xT-ckD"/>
+                            <constraint firstAttribute="trailing" secondItem="mx9-ba-qlp" secondAttribute="trailing" id="Zpc-nS-EJq"/>
+                            <constraint firstItem="mx9-ba-qlp" firstAttribute="leading" secondItem="1Wi-7s-1y4" secondAttribute="leading" id="bLw-01-8o7"/>
+                            <constraint firstItem="0JX-EF-iXC" firstAttribute="bottom" secondItem="FEn-Ge-tCR" secondAttribute="top" id="fiV-Y2-eFr"/>
+                            <constraint firstItem="0JX-EF-iXC" firstAttribute="top" secondItem="mx9-ba-qlp" secondAttribute="bottom" id="qFU-77-ESb"/>
+                            <constraint firstItem="mx9-ba-qlp" firstAttribute="top" secondItem="3bv-aT-eGk" secondAttribute="bottom" constant="1" id="xxt-gN-jjR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="portfolioWebView" destination="0JX-EF-iXC" id="EqI-of-19A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y32-EM-1wJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="1090"/>
         </scene>
     </scenes>
     <resources>

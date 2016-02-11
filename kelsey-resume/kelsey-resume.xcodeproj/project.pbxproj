@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF531C4D1C6C78870042D60A /* background-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF531C4C1C6C78870042D60A /* background-2.png */; };
+		DF531C501C6C7A4D0042D60A /* PortfolioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF531C4F1C6C7A4D0042D60A /* PortfolioViewController.m */; };
 		DF754F401C6C4B8300C6F454 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF754F3F1C6C4B8300C6F454 /* main.m */; };
 		DF754F431C6C4B8300C6F454 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF754F421C6C4B8300C6F454 /* AppDelegate.m */; };
 		DF754F461C6C4B8300C6F454 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF754F451C6C4B8300C6F454 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		DF531C4C1C6C78870042D60A /* background-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-2.png"; sourceTree = "<group>"; };
+		DF531C4E1C6C7A4D0042D60A /* PortfolioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioViewController.h; sourceTree = "<group>"; };
+		DF531C4F1C6C7A4D0042D60A /* PortfolioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioViewController.m; sourceTree = "<group>"; };
 		DF754F3B1C6C4B8300C6F454 /* kelsey-resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kelsey-resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF754F3F1C6C4B8300C6F454 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF754F411C6C4B8300C6F454 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				DF754F421C6C4B8300C6F454 /* AppDelegate.m */,
 				DF754F441C6C4B8300C6F454 /* ViewController.h */,
 				DF754F451C6C4B8300C6F454 /* ViewController.m */,
+				DF531C4E1C6C7A4D0042D60A /* PortfolioViewController.h */,
+				DF531C4F1C6C7A4D0042D60A /* PortfolioViewController.m */,
 				DF754F7D1C6C5AA500C6F454 /* ResumeViewController.h */,
 				DF754F7E1C6C5AA500C6F454 /* ResumeViewController.m */,
 				DF754F471C6C4B8300C6F454 /* Main.storyboard */,
@@ -298,6 +303,7 @@
 				DF754F461C6C4B8300C6F454 /* ViewController.m in Sources */,
 				DF754F7F1C6C5AA500C6F454 /* ResumeViewController.m in Sources */,
 				DF754F431C6C4B8300C6F454 /* AppDelegate.m in Sources */,
+				DF531C501C6C7A4D0042D60A /* PortfolioViewController.m in Sources */,
 				DF754F401C6C4B8300C6F454 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
