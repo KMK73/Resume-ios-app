@@ -11,9 +11,21 @@
 @interface SkillsViewController : UIViewController {
     
     NSTimer *progressTimer;
-    CGFloat HTMLprogressCount;
+    CGFloat progressCount;
     
-    IBOutlet UIProgressView *htmlProgress; 
+    CGFloat htmlPercentage; //progress percentage for html skill
+    CGFloat axurePercentage; //progress percentage for html skill
+    CGFloat sketchPercentage; //progress percentage for html skill
+    CGFloat businessPercentage; //progress percentage for html skill
+    CGFloat iosPercentage; //progress percentage for html skill
+    CGFloat webDevPercentage; //progress percentage for html skill
+
+    IBOutlet UIProgressView *htmlProgress;
+    IBOutlet UIProgressView *axureProgress;
+    IBOutlet UIProgressView *sketchProgress;
+    IBOutlet UIProgressView *businessProgress;
+    IBOutlet UIProgressView *iosProgress;
+    IBOutlet UIProgressView *webDevProgress;
 }
 
 - (IBAction)backToHomepage:(id)sender;

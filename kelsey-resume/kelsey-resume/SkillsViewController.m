@@ -39,24 +39,45 @@
 - (void) setupProgress {
     // Reset everything and start moving the progressbar
     
-    //HTML & CSS SETUP FOR PROGRESS BAR ***************************
-    HTMLprogressCount = 0.0;
-    [htmlProgress setProgress:HTMLprogressCount];
+    //start count at 0
+    progressCount = 0.0;
+    
     progressTimer = [NSTimer scheduledTimerWithTimeInterval:0.1
                                              target:self
                                            selector:@selector(updateProgress)
                                            userInfo:nil
                                             repeats:YES];
+    //HTML & CSS SETUP FOR PROGRESS BAR ***************************
+    [htmlProgress setProgress:htmlPercentage];
+    //AXURE SETUP FOR PROGRESS BAR ***************************
+    [axureProgress setProgress:axurePercentage];
+
+
+
 }
 
 - (void) updateProgress {
     //HTML & CSS SETUP FOR PROGRESS BAR ***************************
-    HTMLprogressCount += 0.05; //increment by 5mil sec
-    NSLog(@"%f",HTMLprogressCount);
+    progressCount += 0.05; //increment by 5mil sec
+    NSLog(@"%f html",htmlPercentage);
     
-    [htmlProgress setProgress:HTMLprogressCount];
-    //HTML SET TO 85%
-    if(HTMLprogressCount >= 0.85) {
+    htmlPercentage += 0.05;
+    //SET HTML TO 85%
+    if (htmlPercentage <= .85) {
+        [htmlProgress setProgress:htmlPercentage];
+    }
+    
+    axurePercentage += 0.05;
+    NSLog(@"%f axure",axurePercentage);
+    //SET HTML TO 85%
+    if (axurePercentage <= .98) {
+        [axureProgress setProgress:axurePercentage];
+    }
+    
+    
+    
+    //INVALIDATE TIMER AFTER 1
+    if(progressCount >= 1) {
         [progressTimer invalidate]; // stops timer, removes the method from the loop.
     }
     
