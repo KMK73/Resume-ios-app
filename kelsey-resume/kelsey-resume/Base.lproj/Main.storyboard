@@ -121,10 +121,10 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="116-Nc-sqz"/>
+                                <exclude reference="MiV-kO-ZCy"/>
                                 <exclude reference="BfH-EG-dJ5"/>
                                 <exclude reference="GKf-1K-1mE"/>
                                 <exclude reference="l9u-FR-WT8"/>
-                                <exclude reference="MiV-kO-ZCy"/>
                             </mask>
                         </variation>
                     </view>
