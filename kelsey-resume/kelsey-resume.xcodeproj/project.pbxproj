@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF531C4D1C6C78870042D60A /* background-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF531C4C1C6C78870042D60A /* background-2.png */; };
 		DF754F401C6C4B8300C6F454 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF754F3F1C6C4B8300C6F454 /* main.m */; };
 		DF754F431C6C4B8300C6F454 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF754F421C6C4B8300C6F454 /* AppDelegate.m */; };
 		DF754F461C6C4B8300C6F454 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF754F451C6C4B8300C6F454 /* ViewController.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF531C4C1C6C78870042D60A /* background-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-2.png"; sourceTree = "<group>"; };
 		DF754F3B1C6C4B8300C6F454 /* kelsey-resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kelsey-resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF754F3F1C6C4B8300C6F454 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF754F411C6C4B8300C6F454 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				DF754F731C6C4D3E00C6F454 /* kmk logo.png */,
 				DF754F711C6C4C9D00C6F454 /* background.jpg */,
 				DF754F751C6C552F00C6F454 /* background.svg */,
+				DF531C4C1C6C78870042D60A /* background-2.png */,
 				DF754F801C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf */,
 				DF754F3F1C6C4B8300C6F454 /* main.m */,
 			);
@@ -262,6 +265,7 @@
 			files = (
 				DF754F761C6C552F00C6F454 /* background.svg in Resources */,
 				DF754F4E1C6C4B8300C6F454 /* LaunchScreen.storyboard in Resources */,
+				DF531C4D1C6C78870042D60A /* background-2.png in Resources */,
 				DF754F721C6C4C9D00C6F454 /* background.jpg in Resources */,
 				DF754F4B1C6C4B8300C6F454 /* Assets.xcassets in Resources */,
 				DF754F741C6C4D3E00C6F454 /* kmk logo.png in Resources */,
@@ -518,6 +522,7 @@
 				DF754F6A1C6C4B8300C6F454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF754F6B1C6C4B8300C6F454 /* Build configuration list for PBXNativeTarget "kelsey-resumeTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				DF754F6D1C6C4B8300C6F454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF754F6E1C6C4B8300C6F454 /* Build configuration list for PBXNativeTarget "kelsey-resumeUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +540,7 @@
 				DF754F701C6C4B8300C6F454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
