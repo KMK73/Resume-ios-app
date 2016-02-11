@@ -11,6 +11,7 @@
 
 @interface ResumeViewController : UIViewController {
     
+    NSArray *paths;
 }
 
 @property (weak, nonatomic) IBOutlet UIWebView *resumeWebView;
