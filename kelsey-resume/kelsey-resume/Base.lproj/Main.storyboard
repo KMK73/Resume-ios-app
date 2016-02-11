@@ -73,6 +73,9 @@
                                 <state key="normal" title="Skills">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="cyS-EC-qQw" kind="presentation" id="ctT-zM-ENP"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portfolio icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-5e-UHz">
                                 <rect key="frame" x="62" y="239" width="75" height="75"/>
@@ -224,12 +227,68 @@
                     <view key="view" contentMode="scaleToFill" id="iEo-F3-ncv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skills-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="8kR-Ff-DKN">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqt-wg-iHX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QgF-NE-8yF"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Back to Home" id="bSX-No-X7m">
+                                        <connections>
+                                            <action selector="backToHomepage:" destination="cyS-EC-qQw" id="7iB-rS-Ydv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fv8-nb-Jmx"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWy-UQ-yr6">
+                                <rect key="frame" x="20" y="75" width="560" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kP7-07-V5K">
+                                <rect key="frame" x="20" y="183" width="560" height="2"/>
+                                <color key="progressTintColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HTML &amp; CSS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLE-pS-phy">
+                                <rect key="frame" x="20" y="142" width="198" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="kP7-07-V5K" firstAttribute="leading" secondItem="DLE-pS-phy" secondAttribute="trailing" constant="-198" id="9WY-Ah-QZf"/>
+                            <constraint firstItem="8kR-Ff-DKN" firstAttribute="trailing" secondItem="iqt-wg-iHX" secondAttribute="trailing" id="9eG-9O-Xkb"/>
+                            <constraint firstItem="kP7-07-V5K" firstAttribute="leading" secondItem="iEo-F3-ncv" secondAttribute="leadingMargin" id="J1A-Aa-rzH"/>
+                            <constraint firstItem="iqt-wg-iHX" firstAttribute="leading" secondItem="8kR-Ff-DKN" secondAttribute="leading" id="Pd5-oT-63F"/>
+                            <constraint firstItem="kP7-07-V5K" firstAttribute="trailing" secondItem="RWy-UQ-yr6" secondAttribute="trailing" id="R5k-0e-yQP"/>
+                            <constraint firstItem="8kR-Ff-DKN" firstAttribute="top" secondItem="iqt-wg-iHX" secondAttribute="bottom" id="R5v-Iz-xaW"/>
+                            <constraint firstItem="kP7-07-V5K" firstAttribute="top" secondItem="DLE-pS-phy" secondAttribute="bottom" constant="8" id="RUM-Gs-eac"/>
+                            <constraint firstItem="kP7-07-V5K" firstAttribute="centerX" secondItem="iqt-wg-iHX" secondAttribute="centerX" id="Rgp-Ra-JPI"/>
+                            <constraint firstItem="iqt-wg-iHX" firstAttribute="top" secondItem="iEo-F3-ncv" secondAttribute="top" id="TmV-Na-8uA"/>
+                            <constraint firstItem="kP7-07-V5K" firstAttribute="top" secondItem="RWy-UQ-yr6" secondAttribute="bottom" constant="72" id="Unx-59-6Yu"/>
+                            <constraint firstItem="8kR-Ff-DKN" firstAttribute="bottom" secondItem="wcV-Gr-igp" secondAttribute="top" id="fuU-IT-lsp"/>
+                            <constraint firstItem="8kR-Ff-DKN" firstAttribute="leading" secondItem="iEo-F3-ncv" secondAttribute="leading" id="gFd-wb-cyc"/>
+                            <constraint firstAttribute="trailing" secondItem="iqt-wg-iHX" secondAttribute="trailing" id="jIH-CV-D4z"/>
+                            <constraint firstItem="wcV-Gr-igp" firstAttribute="top" secondItem="kP7-07-V5K" secondAttribute="bottom" constant="415" id="rdA-RJ-n4e"/>
+                            <constraint firstItem="DLE-pS-phy" firstAttribute="leading" secondItem="kP7-07-V5K" secondAttribute="leading" id="x88-8Z-dmH"/>
+                            <constraint firstItem="kP7-07-V5K" firstAttribute="leading" secondItem="RWy-UQ-yr6" secondAttribute="leading" id="y1Z-li-W1L"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="htmlProgress" destination="kP7-07-V5K" id="jh0-q5-egJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubi-ZX-wvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1069" y="1017"/>
+            <point key="canvasLocation" x="1069" y="1057"/>
         </scene>
         <!--Portfolio View Controller-->
         <scene sceneID="n4w-TN-jaW">
@@ -295,5 +354,6 @@
         <image name="portfolio icon.png" width="180" height="180"/>
         <image name="resume-icon.png" width="198" height="225"/>
         <image name="skill-icon.png" width="225" height="129"/>
+        <image name="skills-background.png" width="1125" height="2001"/>
     </resources>
 </document>

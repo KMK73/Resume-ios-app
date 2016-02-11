@@ -36,6 +36,7 @@
 		DFCDFC9E1C6D447E00E88E1E /* portfolio icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFC9B1C6D447E00E88E1E /* portfolio icon.png */; };
 		DFCDFC9F1C6D447E00E88E1E /* resume-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFC9C1C6D447E00E88E1E /* resume-icon.png */; };
 		DFCDFCA01C6D447E00E88E1E /* skill-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFC9D1C6D447E00E88E1E /* skill-icon.png */; };
+		DFCDFCA21C6D477900E88E1E /* skills-background.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFCA11C6D477900E88E1E /* skills-background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		DFCDFC9B1C6D447E00E88E1E /* portfolio icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portfolio icon.png"; sourceTree = "<group>"; };
 		DFCDFC9C1C6D447E00E88E1E /* resume-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resume-icon.png"; sourceTree = "<group>"; };
 		DFCDFC9D1C6D447E00E88E1E /* skill-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skill-icon.png"; sourceTree = "<group>"; };
+		DFCDFCA11C6D477900E88E1E /* skills-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skills-background.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		DF754F3E1C6C4B8300C6F454 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFCDFCA11C6D477900E88E1E /* skills-background.png */,
 				DF754F731C6C4D3E00C6F454 /* kmk logo.png */,
 				DF754F711C6C4C9D00C6F454 /* background.jpg */,
 				DF754F751C6C552F00C6F454 /* background.svg */,
@@ -320,6 +323,7 @@
 				DF754F761C6C552F00C6F454 /* background.svg in Resources */,
 				DF754F4E1C6C4B8300C6F454 /* LaunchScreen.storyboard in Resources */,
 				DF531C5E1C6C80130042D60A /* kmk-logo29pt3x.png in Resources */,
+				DFCDFCA21C6D477900E88E1E /* skills-background.png in Resources */,
 				DF531C521C6C7DB10042D60A /* kmk-logo@2x.png in Resources */,
 				DF531C4D1C6C78870042D60A /* background-2.png in Resources */,
 				DF754F721C6C4C9D00C6F454 /* background.jpg in Resources */,
