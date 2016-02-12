@@ -49,17 +49,36 @@
                                             repeats:YES];
     //HTML & CSS SETUP FOR PROGRESS BAR ***************************
     [htmlProgress setProgress:htmlPercentage];
+    //adjust the height of the bar
+    [htmlProgress setTransform:CGAffineTransformMakeScale(1.0, 4.0)];
+    
     //AXURE SETUP FOR PROGRESS BAR ***************************
     [axureProgress setProgress:axurePercentage];
+    [axureProgress setTransform:CGAffineTransformMakeScale(1.0, 4.0)];
 
+    //sketch SETUP FOR PROGRESS BAR ***************************
+    [sketchProgress setProgress:sketchPercentage];
+    [sketchProgress setTransform:CGAffineTransformMakeScale(1.0, 4.0)];
 
+    //business SETUP FOR PROGRESS BAR ***************************
+    [businessProgress setProgress:businessPercentage];
+    [businessProgress setTransform:CGAffineTransformMakeScale(1.0, 4.0)];
+    
+    //ios SETUP FOR PROGRESS BAR ***************************
+    [iosProgress setProgress:iosPercentage];
+    [iosProgress setTransform:CGAffineTransformMakeScale(1.0, 4.0)];
+    
+    //web dev SETUP FOR PROGRESS BAR ***************************
+    [webDevProgress     setProgress:webDevPercentage];
+    [webDevProgress     setTransform:CGAffineTransformMakeScale(1.0, 4.0)];
 
 }
 
 - (void) updateProgress {
-    //HTML & CSS SETUP FOR PROGRESS BAR ***************************
+
     progressCount += 0.05; //increment by 5mil sec
-    NSLog(@"%f html",htmlPercentage);
+   
+    //NSLog(@"%f html",htmlPercentage);
     
     htmlPercentage += 0.05;
     //SET HTML TO 85%
@@ -68,13 +87,38 @@
     }
     
     axurePercentage += 0.05;
-    NSLog(@"%f axure",axurePercentage);
-    //SET HTML TO 85%
-    if (axurePercentage <= .98) {
+    //SET axure TO 98%
+    if (axurePercentage <= .95) {
         [axureProgress setProgress:axurePercentage];
     }
     
+    //sketch
+    sketchPercentage += 0.05;
+    //SET sketch TO 70%
+    if (sketchPercentage <= .70) {
+        [sketchProgress setProgress:sketchPercentage];
+    }
     
+    //business
+    businessPercentage += 0.05;
+    //SET business TO 80%
+    if (businessPercentage <= .8) {
+        [businessProgress setProgress:businessPercentage];
+    }
+    
+    //ios
+    iosPercentage += 0.05;
+    //SET ios TO 50%
+    if (iosPercentage <= .50) {
+        [iosProgress   setProgress:iosPercentage];
+    }
+    
+    //web dev
+    webDevPercentage += 0.05;
+    //SET web dev TO 65%
+    if (webDevPercentage <= .60) {
+        [webDevProgress    setProgress:webDevPercentage];
+    }
     
     //INVALIDATE TIMER AFTER 1
     if(progressCount >= 1) {

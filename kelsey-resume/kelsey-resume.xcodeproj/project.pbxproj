@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF45BCA91C6D8BF200199742 /* browser-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF45BCA61C6D8BF200199742 /* browser-icon.png */; };
+		DF45BCAA1C6D8BF200199742 /* desktop-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF45BCA71C6D8BF200199742 /* desktop-icon.png */; };
+		DF45BCAB1C6D8BF200199742 /* document-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF45BCA81C6D8BF200199742 /* document-icon.png */; };
+		DF45BCAF1C6D91F700199742 /* skills-background.png in Resources */ = {isa = PBXBuildFile; fileRef = DF45BCAE1C6D91F700199742 /* skills-background.png */; };
+		DF45BCB11C6D943700199742 /* skill-teal.png in Resources */ = {isa = PBXBuildFile; fileRef = DF45BCB01C6D943700199742 /* skill-teal.png */; };
 		DF531C4D1C6C78870042D60A /* background-2.png in Resources */ = {isa = PBXBuildFile; fileRef = DF531C4C1C6C78870042D60A /* background-2.png */; };
 		DF531C501C6C7A4D0042D60A /* PortfolioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF531C4F1C6C7A4D0042D60A /* PortfolioViewController.m */; };
 		DF531C521C6C7DB10042D60A /* kmk-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF531C511C6C7DB10042D60A /* kmk-logo@2x.png */; };
@@ -36,7 +41,6 @@
 		DFCDFC9E1C6D447E00E88E1E /* portfolio icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFC9B1C6D447E00E88E1E /* portfolio icon.png */; };
 		DFCDFC9F1C6D447E00E88E1E /* resume-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFC9C1C6D447E00E88E1E /* resume-icon.png */; };
 		DFCDFCA01C6D447E00E88E1E /* skill-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFC9D1C6D447E00E88E1E /* skill-icon.png */; };
-		DFCDFCA21C6D477900E88E1E /* skills-background.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFCA11C6D477900E88E1E /* skills-background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF45BCA61C6D8BF200199742 /* browser-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser-icon.png"; sourceTree = "<group>"; };
+		DF45BCA71C6D8BF200199742 /* desktop-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "desktop-icon.png"; sourceTree = "<group>"; };
+		DF45BCA81C6D8BF200199742 /* document-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "document-icon.png"; sourceTree = "<group>"; };
+		DF45BCAE1C6D91F700199742 /* skills-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skills-background.png"; sourceTree = "<group>"; };
+		DF45BCB01C6D943700199742 /* skill-teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skill-teal.png"; sourceTree = "<group>"; };
 		DF531C4C1C6C78870042D60A /* background-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-2.png"; sourceTree = "<group>"; };
 		DF531C4E1C6C7A4D0042D60A /* PortfolioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioViewController.h; sourceTree = "<group>"; };
 		DF531C4F1C6C7A4D0042D60A /* PortfolioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortfolioViewController.m; sourceTree = "<group>"; };
@@ -97,7 +106,6 @@
 		DFCDFC9B1C6D447E00E88E1E /* portfolio icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portfolio icon.png"; sourceTree = "<group>"; };
 		DFCDFC9C1C6D447E00E88E1E /* resume-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "resume-icon.png"; sourceTree = "<group>"; };
 		DFCDFC9D1C6D447E00E88E1E /* skill-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skill-icon.png"; sourceTree = "<group>"; };
-		DFCDFCA11C6D477900E88E1E /* skills-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skills-background.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +180,9 @@
 		DF754F3E1C6C4B8300C6F454 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DFCDFCA11C6D477900E88E1E /* skills-background.png */,
+				DF45BCA61C6D8BF200199742 /* browser-icon.png */,
+				DF45BCA71C6D8BF200199742 /* desktop-icon.png */,
+				DF45BCA81C6D8BF200199742 /* document-icon.png */,
 				DF754F731C6C4D3E00C6F454 /* kmk logo.png */,
 				DF754F711C6C4C9D00C6F454 /* background.jpg */,
 				DF754F751C6C552F00C6F454 /* background.svg */,
@@ -188,7 +198,9 @@
 				DF531C641C6C80FA0042D60A /* kmk-logo60pt3x.png */,
 				DFCDFC9B1C6D447E00E88E1E /* portfolio icon.png */,
 				DFCDFC9C1C6D447E00E88E1E /* resume-icon.png */,
+				DF45BCB01C6D943700199742 /* skill-teal.png */,
 				DFCDFC9D1C6D447E00E88E1E /* skill-icon.png */,
+				DF45BCAE1C6D91F700199742 /* skills-background.png */,
 				DF754F801C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf */,
 				DF754F3F1C6C4B8300C6F454 /* main.m */,
 			);
@@ -318,24 +330,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF531C591C6C7FC20042D60A /* kmk-logo40pt2x.png in Resources */,
+				DF45BCAB1C6D8BF200199742 /* document-icon.png in Resources */,
 				DFCDFC9F1C6D447E00E88E1E /* resume-icon.png in Resources */,
 				DF531C551C6C7F400042D60A /* kmk-logo2x.png in Resources */,
 				DF754F761C6C552F00C6F454 /* background.svg in Resources */,
 				DF754F4E1C6C4B8300C6F454 /* LaunchScreen.storyboard in Resources */,
 				DF531C5E1C6C80130042D60A /* kmk-logo29pt3x.png in Resources */,
-				DFCDFCA21C6D477900E88E1E /* skills-background.png in Resources */,
 				DF531C521C6C7DB10042D60A /* kmk-logo@2x.png in Resources */,
 				DF531C4D1C6C78870042D60A /* background-2.png in Resources */,
+				DF45BCA91C6D8BF200199742 /* browser-icon.png in Resources */,
 				DF754F721C6C4C9D00C6F454 /* background.jpg in Resources */,
 				DF531C5A1C6C7FC20042D60A /* kmk-logo40pt3x.png in Resources */,
 				DF754F4B1C6C4B8300C6F454 /* Assets.xcassets in Resources */,
+				DF45BCAA1C6D8BF200199742 /* desktop-icon.png in Resources */,
 				DF531C661C6C80FA0042D60A /* kmk-logo60pt3x.png in Resources */,
+				DF45BCAF1C6D91F700199742 /* skills-background.png in Resources */,
 				DF531C651C6C80FA0042D60A /* kmk-logo60pt2x.png in Resources */,
 				DF531C561C6C7F400042D60A /* kmk-logo3x.png in Resources */,
 				DF754F741C6C4D3E00C6F454 /* kmk logo.png in Resources */,
 				DF531C5D1C6C80130042D60A /* kmk-logo29pt2x.png in Resources */,
 				DF754F811C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf in Resources */,
 				DFCDFC9E1C6D447E00E88E1E /* portfolio icon.png in Resources */,
+				DF45BCB11C6D943700199742 /* skill-teal.png in Resources */,
 				DFCDFCA01C6D447E00E88E1E /* skill-icon.png in Resources */,
 				DF754F491C6C4B8300C6F454 /* Main.storyboard in Resources */,
 			);
