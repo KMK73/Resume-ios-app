@@ -60,6 +60,55 @@
     }
 }
 
+//email button
+- (IBAction)saveButtonPressed:(id)sender {
+    
+    //set the mail composer object
+    MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
+    //set composer delagate to this view controller (resumeViewController)
+    [mailComposer setMailComposeDelegate:self];
+    if ([MFMailComposeViewController canSendMail]) {
+        // Configure the fields of the interface.
+        [mailComposer setToRecipients:@[@"address@example.com"]];
+        [mailComposer setSubject:@"Your resume app is awesome!"];
+        [mailComposer setMessageBody:@"Thank you for downloading!" isHTML:NO];
+        
+        // Present the view controller modally.
+        [self presentViewController:mailComposer animated:YES completion:nil];
+        
+        return;
+    } else {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error sending mail" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        [alert dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+    
+}
+
+//dismiss the mail VC when it is finished
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    // Check the result or perform other tasks.
+    if (error) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error sending email" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        //OK button action
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            //dismiss the view
+            [alert dismissViewControllerAnimated:YES completion:nil];
+            
+        }];
+        
+        [alert addAction:ok];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    
+    // Dismiss the mail compose view controller.
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+//back button
 - (IBAction)BackToHome:(id)sender {
     
     [self dismissViewControllerAnimated:YES completion:nil];

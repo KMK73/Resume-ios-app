@@ -109,14 +109,14 @@
     //ios
     iosPercentage += 0.05;
     //SET ios TO 50%
-    if (iosPercentage <= .50) {
+    if (iosPercentage <= .35) {
         [iosProgress   setProgress:iosPercentage];
     }
     
     //web dev
     webDevPercentage += 0.05;
     //SET web dev TO 65%
-    if (webDevPercentage <= .60) {
+    if (webDevPercentage <= .50) {
         [webDevProgress    setProgress:webDevPercentage];
     }
     

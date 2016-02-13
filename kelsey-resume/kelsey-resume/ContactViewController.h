@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+//import for save pdf email compatability
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface ContactViewController : UIViewController
+@interface ContactViewController : UIViewController <MFMailComposeViewControllerDelegate> {
+    
+}
 
 
 
