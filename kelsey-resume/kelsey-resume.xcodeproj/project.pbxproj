@@ -36,6 +36,7 @@
 		DF754F761C6C552F00C6F454 /* background.svg in Resources */ = {isa = PBXBuildFile; fileRef = DF754F751C6C552F00C6F454 /* background.svg */; };
 		DF754F7F1C6C5AA500C6F454 /* ResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF754F7E1C6C5AA500C6F454 /* ResumeViewController.m */; };
 		DF754F811C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF754F801C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf */; };
+		DF82AD221C6EC62C00FFFEF3 /* Contact-background.png in Resources */ = {isa = PBXBuildFile; fileRef = DF82AD211C6EC62C00FFFEF3 /* Contact-background.png */; };
 		DFCDFC911C6D236700E88E1E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCDFC901C6D236700E88E1E /* MessageUI.framework */; };
 		DFCDFC941C6D3F0B00E88E1E /* SkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCDFC931C6D3F0B00E88E1E /* SkillsViewController.m */; };
 		DFCDFC9E1C6D447E00E88E1E /* portfolio icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFC9B1C6D447E00E88E1E /* portfolio icon.png */; };
@@ -100,6 +101,7 @@
 		DF754F7D1C6C5AA500C6F454 /* ResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumeViewController.h; sourceTree = "<group>"; };
 		DF754F7E1C6C5AA500C6F454 /* ResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeViewController.m; sourceTree = "<group>"; };
 		DF754F801C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Kelsey Kjeldsen Resume.pdf"; sourceTree = "<group>"; };
+		DF82AD211C6EC62C00FFFEF3 /* Contact-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact-background.png"; sourceTree = "<group>"; };
 		DFCDFC901C6D236700E88E1E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DFCDFC921C6D3F0B00E88E1E /* SkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsViewController.h; sourceTree = "<group>"; };
 		DFCDFC931C6D3F0B00E88E1E /* SkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsViewController.m; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		DF754F3E1C6C4B8300C6F454 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DF82AD211C6EC62C00FFFEF3 /* Contact-background.png */,
 				DF45BCA61C6D8BF200199742 /* browser-icon.png */,
 				DF45BCA71C6D8BF200199742 /* desktop-icon.png */,
 				DF45BCA81C6D8BF200199742 /* document-icon.png */,
@@ -349,6 +352,7 @@
 				DF531C561C6C7F400042D60A /* kmk-logo3x.png in Resources */,
 				DF754F741C6C4D3E00C6F454 /* kmk logo.png in Resources */,
 				DF531C5D1C6C80130042D60A /* kmk-logo29pt2x.png in Resources */,
+				DF82AD221C6EC62C00FFFEF3 /* Contact-background.png in Resources */,
 				DF754F811C6C5B1900C6F454 /* Kelsey Kjeldsen Resume.pdf in Resources */,
 				DFCDFC9E1C6D447E00E88E1E /* portfolio icon.png in Resources */,
 				DF45BCB11C6D943700199742 /* skill-teal.png in Resources */,
