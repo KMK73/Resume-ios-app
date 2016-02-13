@@ -34,4 +34,34 @@
 }
 */
 
+-(IBAction)callPhone:(id)sender {
+    
+    NSString *phoneNumber = @"+16313121091";
+    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt://%@",phoneNumber]];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
+        [[UIApplication sharedApplication] openURL:phoneUrl];
+    } else {
+        //create a new uialert
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Call could not be made at this time." message:@"Sorry please try again later." preferredStyle:UIAlertControllerStyleAlert];
+        
+        //now configure the two buttons within the alert OK button
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            
+            //dismiss the alert view
+            [alert dismissViewControllerAnimated:YES completion:nil];
+
+        }];
+        
+        //ADD THE ok button to the alert itself
+        [alert addAction:ok];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+}
+
+- (IBAction)BackToHome:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
