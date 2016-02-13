@@ -39,6 +39,7 @@
 		DF82AD221C6EC62C00FFFEF3 /* Contact-background.png in Resources */ = {isa = PBXBuildFile; fileRef = DF82AD211C6EC62C00FFFEF3 /* Contact-background.png */; };
 		DF82AD241C6ECF8700FFFEF3 /* bottom-background.png in Resources */ = {isa = PBXBuildFile; fileRef = DF82AD231C6ECF8700FFFEF3 /* bottom-background.png */; };
 		DF82AD2E1C6ED13F00FFFEF3 /* top-background.png in Resources */ = {isa = PBXBuildFile; fileRef = DF82AD2D1C6ED13F00FFFEF3 /* top-background.png */; };
+		DF82AD311C6EDE9600FFFEF3 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF82AD301C6EDE9600FFFEF3 /* ContactViewController.m */; };
 		DFCDFC911C6D236700E88E1E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCDFC901C6D236700E88E1E /* MessageUI.framework */; };
 		DFCDFC941C6D3F0B00E88E1E /* SkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCDFC931C6D3F0B00E88E1E /* SkillsViewController.m */; };
 		DFCDFC9E1C6D447E00E88E1E /* portfolio icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCDFC9B1C6D447E00E88E1E /* portfolio icon.png */; };
@@ -106,6 +107,8 @@
 		DF82AD211C6EC62C00FFFEF3 /* Contact-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact-background.png"; sourceTree = "<group>"; };
 		DF82AD231C6ECF8700FFFEF3 /* bottom-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-background.png"; sourceTree = "<group>"; };
 		DF82AD2D1C6ED13F00FFFEF3 /* top-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top-background.png"; sourceTree = "<group>"; };
+		DF82AD2F1C6EDE9600FFFEF3 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		DF82AD301C6EDE9600FFFEF3 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		DFCDFC901C6D236700E88E1E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DFCDFC921C6D3F0B00E88E1E /* SkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsViewController.h; sourceTree = "<group>"; };
 		DFCDFC931C6D3F0B00E88E1E /* SkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsViewController.m; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				DF754F7E1C6C5AA500C6F454 /* ResumeViewController.m */,
 				DFCDFC921C6D3F0B00E88E1E /* SkillsViewController.h */,
 				DFCDFC931C6D3F0B00E88E1E /* SkillsViewController.m */,
+				DF82AD2F1C6EDE9600FFFEF3 /* ContactViewController.h */,
+				DF82AD301C6EDE9600FFFEF3 /* ContactViewController.m */,
 				DF754F471C6C4B8300C6F454 /* Main.storyboard */,
 				DF754F4A1C6C4B8300C6F454 /* Assets.xcassets */,
 				DF754F4C1C6C4B8300C6F454 /* LaunchScreen.storyboard */,
@@ -390,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF82AD311C6EDE9600FFFEF3 /* ContactViewController.m in Sources */,
 				DF754F461C6C4B8300C6F454 /* ViewController.m in Sources */,
 				DF754F7F1C6C5AA500C6F454 /* ResumeViewController.m in Sources */,
 				DF754F431C6C4B8300C6F454 /* AppDelegate.m in Sources */,

@@ -20,6 +20,9 @@
     
     //set up portfolio site through webview
     [self.portfolioWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://kelseykjeldsen.com/portfolio"]]];
+    [self.portfolioWebView addSubview:self.loadingSpinner];//link the webview with the indicator
+    
+    loadingTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/2.0 target:self selector:@selector(loadingPage) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,6 +39,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) loadingPage {
+    
+    //if its not loading stop animating, or else keep animating
+    if (!self.portfolioWebView.loading) {
+        //if no more loading to do stop animating
+        [self.loadingSpinner stopAnimating];
+    } else {
+        [self.loadingSpinner startAnimating];
+    }
+    
+}
 
 - (IBAction)backToHomepage:(id)sender {
     

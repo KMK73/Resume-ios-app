@@ -22,26 +22,26 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="BLm-Ak-1U8" userLabel="bottom-image">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcd-hC-HPt">
-                                <rect key="frame" x="17" y="285" width="131" height="30"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPc-DE-qbR">
+                                <rect key="frame" x="248" y="44" width="104" height="104"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="IRH-9A-eTM"/>
-                                    <constraint firstAttribute="width" constant="131" id="X0t-fJ-wE8"/>
+                                    <constraint firstAttribute="width" constant="104" id="bOo-4P-RnP"/>
+                                    <constraint firstAttribute="height" constant="104" id="hVq-hB-754"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
-                                <state key="normal" title="Portfolio">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" image="kmk logo.png"/>
                                 <connections>
-                                    <segue destination="IwC-iy-qYa" kind="presentation" id="YBK-xx-jd1"/>
+                                    <segue destination="JSG-hF-abu" kind="presentation" id="7Ib-fv-Xs8"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desktop-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-5e-UHz">
-                                <rect key="frame" x="50" y="220" width="64" height="64"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kelsey Kjeldsen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-qh-N96">
+                                <rect key="frame" x="24" y="156" width="553" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="LE1-OY-Xdl"/>
+                                    <constraint firstAttribute="height" constant="21" id="kja-4R-t4v"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRE-hK-jz7">
                                 <rect key="frame" x="470" y="408" width="96" height="31"/>
                                 <constraints>
@@ -82,26 +82,26 @@
                                     <constraint firstAttribute="height" constant="60" id="ii9-x9-HMR"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPc-DE-qbR">
-                                <rect key="frame" x="248" y="44" width="104" height="104"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcd-hC-HPt">
+                                <rect key="frame" x="17" y="296" width="131" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="104" id="bOo-4P-RnP"/>
-                                    <constraint firstAttribute="height" constant="104" id="hVq-hB-754"/>
+                                    <constraint firstAttribute="height" constant="30" id="IRH-9A-eTM"/>
+                                    <constraint firstAttribute="width" constant="131" id="X0t-fJ-wE8"/>
                                 </constraints>
-                                <state key="normal" image="kmk logo.png"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <state key="normal" title="Portfolio">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="JSG-hF-abu" kind="presentation" id="7Ib-fv-Xs8"/>
+                                    <segue destination="IwC-iy-qYa" kind="presentation" id="YBK-xx-jd1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kelsey Kjeldsen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-qh-N96">
-                                <rect key="frame" x="24" y="156" width="553" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desktop-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-5e-UHz">
+                                <rect key="frame" x="50" y="231" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="kja-4R-t4v"/>
+                                    <constraint firstAttribute="height" constant="64" id="LE1-OY-Xdl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -116,7 +116,7 @@
                             <constraint firstItem="yrP-I9-7fe" firstAttribute="centerX" secondItem="nRE-hK-jz7" secondAttribute="centerX" id="H9V-SP-UOH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Na0-rk-3jY" secondAttribute="bottom" constant="60" id="Isi-qw-OyT"/>
                             <constraint firstItem="jtA-qh-N96" firstAttribute="top" secondItem="PPc-DE-qbR" secondAttribute="bottom" constant="8" id="MiV-kO-ZCy"/>
-                            <constraint firstItem="BLm-Ak-1U8" firstAttribute="top" secondItem="UPV-5e-UHz" secondAttribute="bottom" constant="-284" id="Msb-nY-e94"/>
+                            <constraint firstItem="BLm-Ak-1U8" firstAttribute="top" secondItem="UPV-5e-UHz" secondAttribute="bottom" constant="-295" id="Msb-nY-e94"/>
                             <constraint firstItem="jtA-qh-N96" firstAttribute="top" secondItem="PPc-DE-qbR" secondAttribute="bottom" constant="8" symbolic="YES" id="Ndw-js-y3K"/>
                             <constraint firstItem="UPV-5e-UHz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="OSh-or-2td"/>
                             <constraint firstItem="PPc-DE-qbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="Ojt-17-tfr"/>
@@ -438,7 +438,7 @@
         <!--Contact-->
         <scene sceneID="W7H-mj-Bhf">
             <objects>
-                <viewController title="Contact" id="JSG-hF-abu" sceneMemberID="viewController">
+                <viewController title="Contact" id="JSG-hF-abu" customClass="ContactViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZhW-Ie-Tl4"/>
                         <viewControllerLayoutGuide type="bottom" id="WNA-3G-nnA"/>
@@ -496,6 +496,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-B7-FQl">
+                                <rect key="frame" x="20" y="176" width="560" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -550,6 +556,10 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zjO-oF-Grp">
+                                <rect key="frame" x="282" y="314" width="37" height="37"/>
+                                <color key="color" red="0.26274509800000001" green="0.83921568629999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -560,9 +570,12 @@
                             <constraint firstAttribute="trailing" secondItem="mx9-ba-qlp" secondAttribute="trailing" id="Vuf-MG-NWg"/>
                             <constraint firstItem="mx9-ba-qlp" firstAttribute="top" secondItem="3bv-aT-eGk" secondAttribute="bottom" constant="1" id="YwO-jg-ndT"/>
                             <constraint firstItem="0JX-EF-iXC" firstAttribute="bottom" secondItem="FEn-Ge-tCR" secondAttribute="top" id="ej9-zc-aiU"/>
+                            <constraint firstItem="zjO-oF-Grp" firstAttribute="centerY" secondItem="0JX-EF-iXC" secondAttribute="centerY" id="p8m-Z5-5Ej"/>
+                            <constraint firstItem="zjO-oF-Grp" firstAttribute="centerX" secondItem="mx9-ba-qlp" secondAttribute="centerX" id="th2-1s-vW9"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loadingSpinner" destination="zjO-oF-Grp" id="XdR-Z4-WH4"/>
                         <outlet property="portfolioWebView" destination="0JX-EF-iXC" id="EqI-of-19A"/>
                     </connections>
                 </viewController>
