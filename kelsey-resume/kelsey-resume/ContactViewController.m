@@ -69,7 +69,7 @@
     [mailComposer setMailComposeDelegate:self];
     if ([MFMailComposeViewController canSendMail]) {
         // Configure the fields of the interface.
-        [mailComposer setToRecipients:@[@"address@example.com"]];
+        [mailComposer setToRecipients:@[@"kelsey.kjeldsen@gmail.com"]];
         [mailComposer setSubject:@"Your resume app is awesome!"];
         [mailComposer setMessageBody:@"Thank you for downloading!" isHTML:NO];
         
